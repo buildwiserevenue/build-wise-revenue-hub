@@ -5,123 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build Wise Revenue</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* CSS per la pagina Hub */
-        body {
-            font-family: 'Outfit', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #E0E0E0; /* Light gray for text */
-            background-color: #121212; /* Dark nearly black background */
-            /* Replace 'images/image_6810a2.jpg' with the exact path and name of your background image */
-            background-image: url('images/image_6810a2.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed; /* Keeps background fixed on scroll */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh; /* Minimum height to vertically center */
-            box-sizing: border-box; /* Includes padding and border in width/height */
-        }
-
-        .container {
-            background-color: rgba(18, 18, 18, 0.9); /* Semi-transparent background for container */
-            padding: 40px 30px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            text-align: center;
-            max-width: 600px;
-            width: 90%; /* Responsive width */
-            margin: 20px auto; /* Horizontally center with margin */
-            backdrop-filter: blur(5px); /* Blur effect on background */
-            -webkit-backdrop-filter: blur(5px); /* For Safari compatibility */
-            border: 1px solid rgba(50, 50, 50, 0.7); /* Thin, subtle border */
-            position: relative; /* Required for absolute positioning of language switcher */
-        }
-
-        .logo-section {
-            margin-bottom: 25px;
-        }
-
-        .logo-section img {
-            max-width: 200px; /* Slightly increased for larger logo, adjust if needed */
-            height: auto;
-            /* Removed border-radius, border, and box-shadow to not crop the logo */
-        }
-
-        .tagline {
-            font-size: 1.4em;
-            font-weight: 500;
-            color: #00C853; /* Bright green for tagline */
-            margin-bottom: 35px;
-            line-height: 1.5;
-            text-shadow: 0 0 8px rgba(0, 200, 83, 0.4); /* Shadow to stand out */
-        }
-
-        .links-grid {
-            display: grid;
-            grid-template-columns: 1fr; /* One column default for mobile */
-            gap: 15px; /* Space between links */
-            margin-top: 30px;
-        }
-
-        @media (min-width: 480px) { /* Two columns on wider screens (tablet and desktop) */
-            .links-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-            .link-button.full-width {
-                grid-column: 1 / -1; /* This makes Whop and YouTube take full width on larger screens */
-            }
-        }
-
-        .link-button {
-            display: block;
-            background-color: #333; /* Dark background for buttons */
-            color: #00C853; /* Green text for buttons */
-            padding: 15px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 1.1em;
-            font-weight: 600;
-            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-        }
-
-        .link-button:hover {
-            background-color: #00C853; /* Green background on hover */
-            color: #121212; /* Dark text on hover */
-            transform: translateY(-3px); /* Lift effect */
-            box-shadow: 0 8px 20px rgba(0, 200, 83, 0.4); /* Glow on hover */
-        }
-
-        /* Specific style for disclaimer */
-        .disclaimer {
-            font-size: 0.85em;
-            color: #B0B0B0; /* Lighter gray */
-            margin-top: 30px;
-            line-height: 1.4;
-            opacity: 0.8;
-        }
-
-        /* Style for language switcher */
-        .language-switcher {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            font-size: 0.9em;
-            color: #B0B0B0;
-        }
-        .language-switcher a {
-            color: #00C853;
-            text-decoration: none;
-            font-weight: 600;
-            margin: 0 5px;
-        }
-        .language-switcher a:hover {
-            text-decoration: underline;
-        }
-    </style>
+<style>
+    /* OPZIONE 1: PALETTE ORO/BRONZO */
+    body {
+        font-family: 'Outfit', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #E0E0E0;
+        background-color: #121212;
+        background-image: url('URL_DEL_TUO_SFONDO_QUI'); /* <<< INSERISCI QUI L'URL DEL TUO SFONDO */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+    .container {
+        background-color: rgba(18, 18, 18, 0.9);
+        padding: 40px 30px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        max-width: 600px;
+        width: 90%;
+        margin: 20px auto;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(80, 80, 80, 0.7);
+    }
+    .logo-section img {
+        max-width: 150px;
+        height: auto;
+        border-radius: 50%;
+        border: 3px solid #C0A068; /* <-- COLORE CAMBIATO */
+        box-shadow: 0 0 15px rgba(192, 160, 104, 0.4); /* <-- COLORE CAMBIATO */
+    }
+    .tagline {
+        font-size: 1.4em;
+        font-weight: 500;
+        color: #C0A068; /* <-- COLORE CAMBIATO */
+        margin-bottom: 35px;
+        line-height: 1.5;
+        text-shadow: 0 0 8px rgba(192, 160, 104, 0.3); /* <-- COLORE CAMBIATO */
+    }
+    .links-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    .link-button {
+        display: block;
+        background-color: #333;
+        color: #E0E0E0; /* Testo chiaro per i bottoni */
+        padding: 15px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border: 1px solid #555;
+    }
+    .link-button:hover {
+        background-color: #C0A068; /* <-- COLORE CAMBIATO */
+        color: #121212; /* Testo scuro al hover */
+        border-color: #C0A068; /* <-- COLORE CAMBIATO */
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(192, 160, 104, 0.3); /* <-- COLORE CAMBIATO */
+    }
+    .disclaimer {
+        font-size: 0.85em;
+        color: #B0B0B0;
+        margin-top: 30px;
+        line-height: 1.4;
+        opacity: 0.8;
+    }
+</style>
 </head>
 <body>
     <div class="container">

@@ -5,123 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build Wise Revenue</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* CSS per la pagina Hub */
-        body {
-            font-family: 'Outfit', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #E0E0E0; /* Grigio chiaro per il testo */
-            background-color: #121212; /* Sfondo scuro quasi nero */
-            /* Sostituisci 'images/image_6810a2.jpg' con il percorso e nome esatto della tua immagine di sfondo */
-            background-image: url('images/image_6810a2.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed; /* Mantiene lo sfondo fisso allo scorrimento */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh; /* Altezza minima per centrare verticalmente */
-            box-sizing: border-box; /* Include padding e border nella larghezza/altezza */
-        }
-
-        .container {
-            background-color: rgba(18, 18, 18, 0.9); /* Sfondo semi-trasparente per il contenitore */
-            padding: 40px 30px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            text-align: center;
-            max-width: 600px;
-            width: 90%; /* Responsive width */
-            margin: 20px auto; /* Centra orizzontalmente con margine */
-            backdrop-filter: blur(5px); /* Effetto sfocatura sullo sfondo */
-            -webkit-backdrop-filter: blur(5px); /* Per compatibilità Safari */
-            border: 1px solid rgba(50, 50, 50, 0.7); /* Bordo sottile e discreto */
-            position: relative; /* Necessario per posizionare il language switcher */
-        }
-
-        .logo-section {
-            margin-bottom: 25px;
-        }
-
-        .logo-section img {
-            max-width: 200px; /* Aumentato un po' per logo più grande, adatta se serve */
-            height: auto;
-            /* Rimossi border-radius, border e box-shadow per non tagliare il logo */
-        }
-
-        .tagline {
-            font-size: 1.4em;
-            font-weight: 500;
-            color: #00C853; /* Verde brillante per la tagline */
-            margin-bottom: 35px;
-            line-height: 1.5;
-            text-shadow: 0 0 8px rgba(0, 200, 83, 0.4); /* Ombra per risaltare */
-        }
-
-        .links-grid {
-            display: grid;
-            grid-template-columns: 1fr; /* Una colonna di default per mobile */
-            gap: 15px; /* Spazio tra i link */
-            margin-top: 30px;
-        }
-
-        @media (min-width: 480px) { /* Due colonne su schermi più larghi (tablet e desktop) */
-            .links-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-            .link-button.full-width {
-                grid-column: 1 / -1; /* Questo farà sì che Whop e YouTube occupino l'intera larghezza su schermi più grandi */
-            }
-        }
-
-        .link-button {
-            display: block;
-            background-color: #333; /* Sfondo scuro per i bottoni */
-            color: #00C853; /* Testo verde per i bottoni */
-            padding: 15px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 1.1em;
-            font-weight: 600;
-            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombra discreta */
-        }
-
-        .link-button:hover {
-            background-color: #00C853; /* Sfondo verde al hover */
-            color: #121212; /* Testo scuro al hover */
-            transform: translateY(-3px); /* Effetto sollevamento */
-            box-shadow: 0 8px 20px rgba(0, 200, 83, 0.4); /* Bagliore al hover */
-        }
-
-        /* Stile specifico per il disclaimer */
-        .disclaimer {
-            font-size: 0.85em;
-            color: #B0B0B0; /* Grigio più chiaro */
-            margin-top: 30px;
-            line-height: 1.4;
-            opacity: 0.8;
-        }
-
-        /* Stile per il selettore di lingua */
-        .language-switcher {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            font-size: 0.9em;
-            color: #B0B0B0;
-        }
-        .language-switcher a {
-            color: #00C853;
-            text-decoration: none;
-            font-weight: 600;
-            margin: 0 5px;
-        }
-        .language-switcher a:hover {
-            text-decoration: underline;
-        }
-    </style>
+<style>
+    /* OPZIONE 1: PALETTE ORO/BRONZO */
+    body {
+        font-family: 'Outfit', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #E0E0E0;
+        background-color: #121212;
+        background-image: url('URL_DEL_TUO_SFONDO_QUI'); /* <<< INSERISCI QUI L'URL DEL TUO SFONDO */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+    .container {
+        background-color: rgba(18, 18, 18, 0.9);
+        padding: 40px 30px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        max-width: 600px;
+        width: 90%;
+        margin: 20px auto;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(80, 80, 80, 0.7);
+    }
+    .logo-section img {
+        max-width: 150px;
+        height: auto;
+        border-radius: 50%;
+        border: 3px solid #C0A068; /* <-- COLORE CAMBIATO */
+        box-shadow: 0 0 15px rgba(192, 160, 104, 0.4); /* <-- COLORE CAMBIATO */
+    }
+    .tagline {
+        font-size: 1.4em;
+        font-weight: 500;
+        color: #C0A068; /* <-- COLORE CAMBIATO */
+        margin-bottom: 35px;
+        line-height: 1.5;
+        text-shadow: 0 0 8px rgba(192, 160, 104, 0.3); /* <-- COLORE CAMBIATO */
+    }
+    .links-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    .link-button {
+        display: block;
+        background-color: #333;
+        color: #E0E0E0; /* Testo chiaro per i bottoni */
+        padding: 15px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border: 1px solid #555;
+    }
+    .link-button:hover {
+        background-color: #C0A068; /* <-- COLORE CAMBIATO */
+        color: #121212; /* Testo scuro al hover */
+        border-color: #C0A068; /* <-- COLORE CAMBIATO */
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(192, 160, 104, 0.3); /* <-- COLORE CAMBIATO */
+    }
+    .disclaimer {
+        font-size: 0.85em;
+        color: #B0B0B0;
+        margin-top: 30px;
+        line-height: 1.4;
+        opacity: 0.8;
+    }
+</style>
 </head>
 <body>
     <div class="container">
