@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,33 +11,33 @@
             font-family: 'Outfit', sans-serif;
             margin: 0;
             padding: 0;
-            color: #E0E0E0; /* Light gray for text */
-            background-color: #121212; /* Dark nearly black background */
-            /* Replace 'images/image_6810a2.jpg' with the exact path and name of your background image */
+            color: #E0E0E0; /* Grigio chiaro per il testo */
+            background-color: #121212; /* Sfondo scuro quasi nero */
+            /* Sostituisci 'images/image_6810a2.jpg' con il percorso e nome esatto della tua immagine di sfondo */
             background-image: url('images/image_6810a2.jpg');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed; /* Keeps background fixed on scroll */
+            background-attachment: fixed; /* Mantiene lo sfondo fisso allo scorrimento */
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh; /* Minimum height to vertically center */
-            box-sizing: border-box; /* Includes padding and border in width/height */
+            min-height: 100vh; /* Altezza minima per centrare verticalmente */
+            box-sizing: border-box; /* Include padding e border nella larghezza/altezza */
         }
 
         .container {
-            background-color: rgba(18, 18, 18, 0.9); /* Semi-transparent background for container */
+            background-color: rgba(18, 18, 18, 0.9); /* Sfondo semi-trasparente per il contenitore */
             padding: 40px 30px;
             border-radius: 12px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
             text-align: center;
             max-width: 600px;
             width: 90%; /* Responsive width */
-            margin: 20px auto; /* Horizontally center with margin */
-            backdrop-filter: blur(5px); /* Blur effect on background */
-            -webkit-backdrop-filter: blur(5px); /* For Safari compatibility */
-            border: 1px solid rgba(50, 50, 50, 0.7); /* Thin, subtle border */
-            position: relative; /* Required for absolute positioning of language switcher */
+            margin: 20px auto; /* Centra orizzontalmente con margine */
+            backdrop-filter: blur(5px); /* Effetto sfocatura sullo sfondo */
+            -webkit-backdrop-filter: blur(5px); /* Per compatibilità Safari */
+            border: 1px solid rgba(50, 50, 50, 0.7); /* Bordo sottile e discreto */
+            position: relative; /* Necessario per posizionare il language switcher */
         }
 
         .logo-section {
@@ -45,66 +45,66 @@
         }
 
         .logo-section img {
-            max-width: 200px; /* Slightly increased for larger logo, adjust if needed */
+            max-width: 200px; /* Aumentato un po' per logo più grande, adatta se serve */
             height: auto;
-            /* Removed border-radius, border, and box-shadow to not crop the logo */
+            /* Rimossi border-radius, border e box-shadow per non tagliare il logo */
         }
 
         .tagline {
             font-size: 1.4em;
             font-weight: 500;
-            color: #00C853; /* Bright green for tagline */
+            color: #00C853; /* Verde brillante per la tagline */
             margin-bottom: 35px;
             line-height: 1.5;
-            text-shadow: 0 0 8px rgba(0, 200, 83, 0.4); /* Shadow to stand out */
+            text-shadow: 0 0 8px rgba(0, 200, 83, 0.4); /* Ombra per risaltare */
         }
 
         .links-grid {
             display: grid;
-            grid-template-columns: 1fr; /* One column default for mobile */
-            gap: 15px; /* Space between links */
+            grid-template-columns: 1fr; /* Una colonna di default per mobile */
+            gap: 15px; /* Spazio tra i link */
             margin-top: 30px;
         }
 
-        @media (min-width: 480px) { /* Two columns on wider screens (tablet and desktop) */
+        @media (min-width: 480px) { /* Due colonne su schermi più larghi (tablet e desktop) */
             .links-grid {
                 grid-template-columns: 1fr 1fr;
             }
             .link-button.full-width {
-                grid-column: 1 / -1; /* This makes Whop and YouTube take full width on larger screens */
+                grid-column: 1 / -1; /* Questo farà sì che Whop e YouTube occupino l'intera larghezza su schermi più grandi */
             }
         }
 
         .link-button {
             display: block;
-            background-color: #333; /* Dark background for buttons */
-            color: #00C853; /* Green text for buttons */
+            background-color: #333; /* Sfondo scuro per i bottoni */
+            color: #00C853; /* Testo verde per i bottoni */
             padding: 15px 20px;
             border-radius: 8px;
             text-decoration: none;
             font-size: 1.1em;
             font-weight: 600;
             transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombra discreta */
         }
 
         .link-button:hover {
-            background-color: #00C853; /* Green background on hover */
-            color: #121212; /* Dark text on hover */
-            transform: translateY(-3px); /* Lift effect */
-            box-shadow: 0 8px 20px rgba(0, 200, 83, 0.4); /* Glow on hover */
+            background-color: #00C853; /* Sfondo verde al hover */
+            color: #121212; /* Testo scuro al hover */
+            transform: translateY(-3px); /* Effetto sollevamento */
+            box-shadow: 0 8px 20px rgba(0, 200, 83, 0.4); /* Bagliore al hover */
         }
 
-        /* Specific style for disclaimer */
+        /* Stile specifico per il disclaimer */
         .disclaimer {
             font-size: 0.85em;
-            color: #B0B0B0; /* Lighter gray */
+            color: #B0B0B0; /* Grigio più chiaro */
             margin-top: 30px;
             line-height: 1.4;
             opacity: 0.8;
         }
 
-        /* Style for language switcher */
+        /* Stile per il selettore di lingua */
         .language-switcher {
             position: absolute;
             top: 15px;
@@ -125,32 +125,29 @@
 </head>
 <body>
     <div class="container">
+        <div class="language-switcher">
+            <a href="index.html">English</a> | Italiano
+        </div>
+
         <div class="logo-section">
             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiK_lh7IeK6a_IS4yhpk6PB8VIUGyryMlutmIjPvQX2_RO6MdEGrcrMMk31Vd7b3U0Bs83-eZmK7hPECFHL0rOCyUwSTBIbDUPHHmqRaG5FUzdp-IfQ6hO6RBd3gXMfpOFZKM50SYaTa7P3fmChPW-pB1lewG7pvvy_2pXvA5uAJoBWhKq_4mjHODu_HopX/w640-h238/Copia%20di%20Build%20Wise%20Revenue-Photoroom%20-%20Copia.png" alt="Build Wise Revenue Logo">
         </div>
         <div class="tagline">
-            Unleash your trading potential with knowledge, discipline and the support of a community. It is your guide to achieving conscious financial freedom.
+            Sfrutta il tuo potenziale nel trading con la conoscenza, la disciplina e il supporto della community. La tua guida verso una libertà finanziaria consapevole.
         </div>
         
         <div class="links-grid">
-            <a href="https://it.buildwiserevenue.top/">Blog IT</a>
+            <a href="https://it.buildwiserevenue.top/" class="link-button">Blog IT</a>
             <a href="https://www.buildwiserevenue.top/" class="link-button">Blog EN</a>
             <a href="https://discord.gg/DtHsMn2ASh" target="_blank" class="link-button">Discord IT</a>
             <a href="https://discord.gg/hk6EPnWe9E" target="_blank" class="link-button">Discord EN</a>
             <a href="https://whop.com/bwr-wolf-pack-access/#my-offers-prod_24uuhclWfbDmg" target="_blank" class="link-button full-width">Esplora Whop</a>
-            </div>
+
+        </div>
 
         <div class="disclaimer">
-            Disclaimer: The information on this site is intended for educational and entertainment purposes only. Trading carries a high degree of risk and may not be suitable for all investors. It does not constitute financial advice.
+            Disclaimer: Le informazioni fornite su questo sito sono solo a scopo didattico e ipotetico. Il trading comporta rischi significativi di perdita e non è adatto a tutti gli investitori. Non costituisce consulenza finanziaria.
         </div>
     </div>
-
-    <script>
-        // Check if browser language starts with 'it' (Italian)
-        // And ensure we are not already on the Italian page to prevent loops
-        if (navigator.language.startsWith('it') && window.location.pathname.indexOf('index-it.html') === -1) {
-            window.location.href = 'index-it.html';
-        }
-    </script>
 </body>
 </html>
