@@ -5,84 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build Wise Revenue</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<style>
-    /* OPZIONE 1: PALETTE ORO/BRONZO */
-    body {
-        font-family: 'Outfit', sans-serif;
-        margin: 0;
-        padding: 0;
-        color: #E0E0E0;
-        background-color: #121212;
-        background-image: url('URL_DEL_TUO_SFONDO_QUI'); /* <<< INSERISCI QUI L'URL DEL TUO SFONDO */
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        box-sizing: border-box;
-    }
-    .container {
-        background-color: rgba(18, 18, 18, 0.9);
-        padding: 40px 30px;
-        border-radius: 12px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-        text-align: center;
-        max-width: 600px;
-        width: 90%;
-        margin: 20px auto;
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-        border: 1px solid rgba(80, 80, 80, 0.7);
-    }
-    .logo-section img {
-        max-width: 150px;
-        height: auto;
-        border-radius: 50%;
-        border: 3px solid #C0A068; /* <-- COLORE CAMBIATO */
-        box-shadow: 0 0 15px rgba(192, 160, 104, 0.4); /* <-- COLORE CAMBIATO */
-    }
-    .tagline {
-        font-size: 1.4em;
-        font-weight: 500;
-        color: #C0A068; /* <-- COLORE CAMBIATO */
-        margin-bottom: 35px;
-        line-height: 1.5;
-        text-shadow: 0 0 8px rgba(192, 160, 104, 0.3); /* <-- COLORE CAMBIATO */
-    }
-    .links-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
-    }
-    .link-button {
-        display: block;
-        background-color: #333;
-        color: #E0E0E0; /* Testo chiaro per i bottoni */
-        padding: 15px 20px;
-        border-radius: 8px;
-        text-decoration: none;
-        font-size: 1.1em;
-        font-weight: 600;
-        transition: all 0.3s ease;
-        border: 1px solid #555;
-    }
-    .link-button:hover {
-        background-color: #C0A068; /* <-- COLORE CAMBIATO */
-        color: #121212; /* Testo scuro al hover */
-        border-color: #C0A068; /* <-- COLORE CAMBIATO */
-        transform: translateY(-3px);
-        box-shadow: 0 8px 20px rgba(192, 160, 104, 0.3); /* <-- COLORE CAMBIATO */
-    }
-    .disclaimer {
-        font-size: 0.85em;
-        color: #B0B0B0;
-        margin-top: 30px;
-        line-height: 1.4;
-        opacity: 0.8;
-    }
-</style>
+    <style>
+        /* OPZIONE 1: PALETTE ORO/BRONZO */
+        body {
+            font-family: 'Outfit', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #E0E0E0;
+            background-color: #121212;
+            background-image: url('images/image_6810a2.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        
+        /* --- NUOVO: Selettore Lingua --- */
+        .language-selector {
+            position: absolute;
+            top: 25px;
+            right: 30px;
+            z-index: 10;
+        }
+        .language-selector a {
+            color: #B0B0B0;
+            text-decoration: none;
+            font-size: 0.9em;
+            font-weight: 500;
+            margin: 0 5px;
+            transition: color 0.3s ease;
+        }
+        .language-selector a:hover {
+            color: #C0A068;
+        }
+        .language-selector .separator {
+            color: #666;
+        }
+        /* --- FINE NUOVO --- */
+
+        .container {
+            background-color: rgba(18, 18, 18, 0.9);
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+            margin: 20px auto;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(80, 80, 80, 0.7);
+        }
+
+        /* --- LOGO CORRETTO --- */
+        .logo-section {
+            margin-bottom: 25px;
+        }
+        .logo-container {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Il contenitore è il cerchio */
+            border: 3px solid #C0A068;
+            box-shadow: 0 0 15px rgba(192, 160, 104, 0.4);
+            margin: 0 auto;
+            overflow: hidden; /* Nasconde le parti dell'immagine che escono */
+        }
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Adatta l'immagine senza distorcerla */
+        }
+        /* --- FINE LOGO CORRETTO --- */
+        
+        .tagline {
+            font-size: 1.4em;
+            font-weight: 500;
+            color: #C0A068;
+            margin-bottom: 35px;
+            line-height: 1.5;
+            text-shadow: 0 0 8px rgba(192, 160, 104, 0.3);
+        }
+        .links-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .link-button {
+            display: block;
+            background-color: #333;
+            color: #E0E0E0;
+            padding: 15px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 1px solid #555;
+        }
+        .link-button:hover {
+            background-color: #C0A068;
+            color: #121212;
+            border-color: #C0A068;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(192, 160, 104, 0.3);
+        }
+        /* Stile specifico per il bottone "Esplora Whop" */
+        .whop-button {
+            grid-column: 1 / -1; /* Fa espandere il bottone per tutta la larghezza */
+        }
+        .disclaimer {
+            font-size: 0.85em;
+            color: #B0B0B0;
+            margin-top: 30px;
+            line-height: 1.4;
+            opacity: 0.8;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
