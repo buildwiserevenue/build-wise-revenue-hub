@@ -24,22 +24,6 @@
             box-sizing: border-box;
             padding: 20px 0; 
         }
-        
-        .language-selector a {
-            color: #B0B0B0;
-            text-decoration: none;
-            font-size: 0.9em;
-            font-weight: 500;
-            margin: 0 8px;
-            transition: color 0.3s ease;
-        }
-        .language-selector a:hover {
-            color: #C0A068;
-        }
-        .language-selector .separator {
-            color: #555;
-        }
-
         .container {
             background-color: rgba(18, 18, 18, 0.9);
             padding: 40px 30px;
@@ -60,8 +44,22 @@
             right: 25px;
             z-index: 1000;
         }
+        
+        .language-selector a {
+            color: #B0B0B0;
+            text-decoration: none;
+            font-size: 0.9em;
+            font-weight: 500;
+            margin: 0 8px;
+            transition: color 0.3s ease;
+        }
+        .language-selector a:hover {
+            color: #C0A068;
+        }
+        .language-selector .separator {
+            color: #555;
+        }
 
-        /* CSS per Logo Pulito */
         .logo-section {
             margin-bottom: 25px;
         }
@@ -114,20 +112,19 @@
             opacity: 0.8;
         }
 
-        /* MEDIA QUERY PER MOBILE */
         @media (max-width: 600px) {
             .container {
                 padding: 30px 20px;
                 width: 95%;
             }
             .logo-section img {
-                max-width: 280px; /* Logo più piccolo su mobile */
+                max-width: 280px;
             }
             .tagline {
                 font-size: 1.2em;
             }
             .links-grid {
-                grid-template-columns: 1fr; /* Una sola colonna */
+                grid-template-columns: 1fr;
             }
             .link-button {
                 padding: 18px 20px;
@@ -160,7 +157,8 @@
             <a href="https://www.buildwiserevenue.top/" class="link-button">Blog EN</a>
             <a href="https://discord.gg/DtHsMn2ASh" target="_blank" class="link-button">Discord IT</a>
             <a href="https://discord.gg/hk6EPnWe9E" target="_blank" class="link-button">Discord EN</a>
-            <a href="https://whop.com/bwr-wolf-pack-access/#my-offers-prod_24uuhclWfbDmg" target="_blank" class="link-button full-width">Esplora Whop</a></div>
+            <a href="https://join.buildwiserevenue.top" target="_blank" class="link-button whop-button">Entra nei Wise Wolves</a>
+</div>
 
         <div class="disclaimer">
             Disclaimer: Le informazioni fornite su questo sito sono solo a scopo didattico e d'intrattenimento. Il trading comporta rischi significativi di perdita e non è adatto a tutti gli investitori. Questa non costituisce consulenza finanziaria.
